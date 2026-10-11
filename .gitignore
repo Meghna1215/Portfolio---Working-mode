@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+assets/models/*.glb
+!assets/models/elevated-station-concourse.glb
+.env
+.env.*
+!.env.example

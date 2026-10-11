@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Revit modelling and parametric content by Meghna Jayanarayanan." />
+  <meta name="theme-color" content="#1c2430" />
+  <title>Model — Meghna Jayanarayanan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="icon" href="./favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="module" src="./vendor/model-viewer.min.js"></script>
+  <script src="./script.js" defer></script>
+</head>
+<body class="detail-page detail-model">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header is-solid" data-header>
+    <a class="brand" href="./index.html" aria-label="Meghna Jayanarayanan, home">MJ<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span><i></i><i></i></button>
+    <nav id="primary-nav" aria-label="Primary navigation"><a href="./index.html">Home</a><a href="./index.html#story">Story</a><a href="./index.html#skills">Skills</a><a href="./index.html#contact">Contact</a></nav>
+  </header>
+  <main id="main">
+    <section class="detail-hero">
+      <a class="back-link" href="./index.html#skills">← Back to Skills</a>
+      <div class="detail-title"><span>01</span><div><p>Primary skill</p><h1>MODEL</h1></div><p>Revit Modelling<br />&amp; Parametric Content</p></div>
+      <div class="detail-intro"><h2>Accurate BIM environments, developed from architectural logic.</h2><p>Model development is the centre of Meghna’s practice, with a focus on clear geometry, coordinated information and adaptable parametric content.</p></div>
+    </section>
+
+    <section class="model-viewer-section section-pad" aria-labelledby="station-title">
+      <div class="media-heading"><div><p class="kicker">M.01 / Interactive model</p><h2 id="station-title">Typical Elevated Metro Station — Concourse Level</h2></div><p>An interactive 3D model of the concourse level of a typical elevated metro station.</p></div>
+      <div class="viewer-shell">
+        <model-viewer id="station-viewer" src="./assets/models/elevated-station-concourse.glb?v=3" alt="Interactive 3D model of a typical elevated station concourse" camera-controls touch-action="pan-y" reveal="interaction" shadow-intensity="0.8" exposure="1" interaction-prompt="auto" camera-orbit="25deg 70deg 70%" min-camera-orbit="auto 10deg 10%" max-camera-orbit="auto 90deg 300%" data-initial-orbit="25deg 70deg 70%">
+          <button class="viewer-poster" slot="poster" type="button">
+            <span>Optimized interactive model</span><strong>Load 3D model</strong><small>Rotate · Zoom · Pan</small>
+          </button>
+          <div class="viewer-progress" slot="progress-bar"><i></i><span>Loading model…</span></div>
+        </model-viewer>
+        <div class="viewer-tools" aria-label="3D viewer controls">
+          <button type="button" data-reset-model>Reset view</button>
+          <button type="button" data-fullscreen-model>Fullscreen</button>
+          <span>Drag to rotate · scroll or pinch to zoom</span>
+        </div>
+        <noscript><p class="viewer-fallback">JavaScript is required for the interactive viewer.</p></noscript>
+      </div>
+      <p class="media-note">The model is intentionally loaded only after interaction so the rest of the portfolio remains fast on desktop and mobile.</p>
+    </section>
+
+    <section class="additional-models section-pad" id="additional-models" aria-labelledby="additional-title">
+      <div class="media-heading"><div><p class="kicker">M.02—04 / Model studies</p><h2 id="additional-title">Additional model work</h2></div><p>Placeholders reserve the approved gallery structure until final images are supplied.</p></div>
+      <div class="placeholder-gallery three-up">
+        <article class="technical-placeholder"><span>M.02</span><div class="bridge-lines" aria-hidden="true"></div><h3>Typical Steel Bridge</h3><p>Model image pending</p></article>
+        <article class="technical-placeholder"><span>M.03</span><div class="viaduct-lines" aria-hidden="true"></div><h3>Typical Viaduct</h3><p>Model image pending</p></article>
+        <article class="technical-placeholder"><span>M.04</span><div class="tunnel-lines" aria-hidden="true"></div><h3>Typical Twin Tunnel</h3><p>Modelling work · image pending</p></article>
+      </div>
+    </section>
+
+    <nav class="detail-pagination" aria-label="Skill pages"><span>01 / 05</span><a href="./coordinate.html">Next: Coordinate →</a></nav>
+  </main>
+  <footer><span>© 2026 Meghna Jayanarayanan</span><a href="./index.html#skills">Skills index ↑</a></footer>
+</body>
+</html>
